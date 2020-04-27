@@ -1,6 +1,8 @@
 package cn.leetcode.codes.simple2;
 
 
+import cn.leetcode.codes.common.ListNode;
+
 public class Simple2 {
 
     /*
