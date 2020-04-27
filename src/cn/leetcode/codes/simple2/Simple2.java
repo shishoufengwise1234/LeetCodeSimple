@@ -1,6 +1,7 @@
 package cn.leetcode.codes.simple2;
 
-import com.sun.source.doctree.UnknownBlockTagTree;
+
+import cn.leetcode.codes.common.ListNode;
 
 public class Simple2 {
 
