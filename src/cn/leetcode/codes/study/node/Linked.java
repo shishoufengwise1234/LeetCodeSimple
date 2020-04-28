@@ -45,7 +45,7 @@ public class Linked<E> {
      * @param e 数据
      */
     public void addFirst(E e){
-        PKt.out("addFirst() e = "+e);
+//        PKt.out("addFirst() e = "+e);
 
         Link<E> newLink = new Link<>(e);
         newLink.next = this.mHead;
@@ -78,15 +78,13 @@ public class Linked<E> {
     public void add(int pos,E e){
         checkPos(pos);
 
-        PKt.out("add() pos = "+pos);
-
+        PKt.out("add() pos = "+pos + " e = "+e);
         // 如果是插入下标 小于 0 则认为插入头部
         if (pos == 0){
             addFirst(e);
         }
         Link<E> curr = this.mHead;
-        int count = 0;
-
+        // 找到要插入的前置节点位置
         for (int i = 0; i < pos - 1; i++) {
             curr = curr.next;
         }
@@ -100,6 +98,7 @@ public class Linked<E> {
 //        }
         Link<E> newLink = new Link<>(e);
         newLink.next = curr.next;
+        // 当前节点
         curr.next = newLink;
 
         this.mSize++;
