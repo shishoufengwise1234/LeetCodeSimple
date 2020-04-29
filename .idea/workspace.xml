@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5d316b-283d-4c5e-9208-9ac3e39bacd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/other/OtherMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/study/node/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/simple27/Simple27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/simple88/Simple88.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCodeSimple/META-INF/LeetCodeSimple.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCodeSimple/META-INF/LeetCodeSimple.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/leetcode/codes/study/node/LinkTestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/study/node/LinkTestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/leetcode/codes/study/node/Linked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/study/node/Linked.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
       <recent name="$PROJECT_DIR$/src/cn/leetcode/codes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OtherMain">
+  <component name="RunManager" selected="Application.Simple88">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -103,21 +99,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleNodeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.study.node.SingleNodeMain" />
-      <module name="LeetCodeSimple" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TwoNodeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.study.node.TwoNodeMain" />
+    <configuration name="Simple27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.simple27.Simple27" />
       <module name="LeetCodeSimple" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.leetcode.codes.study.node.*" />
+          <option name="PATTERN" value="cn.leetcode.codes.simple27.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Simple88" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.simple88.Simple88" />
+      <module name="LeetCodeSimple" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.leetcode.codes.simple88.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Simple88" />
+        <item itemvalue="Application.Simple27" />
         <item itemvalue="Application.OtherMain" />
         <item itemvalue="Application.LinkTestMain" />
         <item itemvalue="Application.Simple21" />
-        <item itemvalue="Application.TwoNodeMain" />
-        <item itemvalue="Application.SingleNodeMain" />
       </list>
     </recent_temporary>
   </component>
@@ -200,22 +202,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="806" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588040935027" />
-    <state width="1877" height="255" key="GridCell.Tab.0.bottom" timestamp="1588045918817">
+    <state width="1877" height="267" key="GridCell.Tab.0.bottom" timestamp="1588141251404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588045918817" />
-    <state width="1877" height="255" key="GridCell.Tab.0.center" timestamp="1588045918817">
+    <state width="1877" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588141251404" />
+    <state width="1877" height="267" key="GridCell.Tab.0.center" timestamp="1588141251404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="255" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588045918817" />
-    <state width="1877" height="255" key="GridCell.Tab.0.left" timestamp="1588045918817">
+    <state width="1877" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588141251404" />
+    <state width="1877" height="267" key="GridCell.Tab.0.left" timestamp="1588141251404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="255" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588045918817" />
-    <state width="1877" height="255" key="GridCell.Tab.0.right" timestamp="1588045918817">
+    <state width="1877" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588141251404" />
+    <state width="1877" height="267" key="GridCell.Tab.0.right" timestamp="1588141251404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="255" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588045918817" />
+    <state width="1877" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588141251404" />
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588042898847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
