@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5d316b-283d-4c5e-9208-9ac3e39bacd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter10_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter53_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/simple1051/Simple1051.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/simple26/Simple26.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/simple2/Simple2_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/leetcode/codes/simple3/Simple3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,33 +19,21 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple1051/Simple1051.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple3/Simple3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-end-line="41" />
+            <state relative-caret-position="635">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter53_2.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter10_1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="528">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -82,13 +67,17 @@
         <option value="$PROJECT_DIR$/src/cn/leetcode/codes/P.kt" />
         <option value="$PROJECT_DIR$/src/cn/leetcode/codes/Arr.kt" />
         <option value="$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter4.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="/var/folders/15/5283rhtn20l4051c3jp3yv980000gn/T/leetcode/editor/cn/[1]两数之和.java" />
         <option value="/var/folders/15/5283rhtn20l4051c3jp3yv980000gn/T/leetcode/editor/cn/doc/xun-zhao-liang-ge-you-xu-shu-zu-de-zhong-wei-shu-b.md" />
         <option value="$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter10_1.java" />
         <option value="$PROJECT_DIR$/src/cn/leetcode/codes/simple26/Simple26.java" />
         <option value="$PROJECT_DIR$/src/cn/leetcode/codes/simple1051/Simple1051.java" />
         <option value="$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter53_2.java" />
+        <option value="$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter5.java" />
+        <option value="$PROJECT_DIR$/src/cn/leetcode/codes/other/RevertListNote.java" />
+        <option value="$PROJECT_DIR$/src/cn/leetcode/codes/simple2/Simple2_2.java" />
+        <option value="$PROJECT_DIR$/src/cn/leetcode/codes/simple3/Simple3.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -99,8 +88,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectId" id="1b779QBb18mwco66L9eehQ7kIWs" />
   <component name="ProjectLevelVcsManager">
@@ -113,6 +102,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +126,21 @@
               <item name="LeetCodeSimple" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="codes" type="462c0819:PsiDirectoryNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCodeSimple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCodeSimple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="codes" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCodeSimple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCodeSimple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="codes" type="462c0819:PsiDirectoryNode" />
+              <item name="simple2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LeetCodeSimple" type="b2602c69:ProjectViewProjectNode" />
@@ -149,7 +153,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -167,7 +170,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -190,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Inter53_2">
+  <component name="RunManager" selected="Application.Simple2_2">
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -206,8 +209,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Inter10_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.interview.Inter10_1" />
+    <configuration name="Inter5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.interview.Inter5" />
       <module name="LeetCodeSimple" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -222,6 +225,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RevertListNote" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.other.RevertListNote" />
+      <module name="LeetCodeSimple" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Simple1051" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.simple1051.Simple1051" />
       <module name="LeetCodeSimple" />
@@ -230,16 +241,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Simple26" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.simple26.Simple26" />
-      <module name="LeetCodeSimple" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Simple88" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.simple88.Simple88" />
+    <configuration name="Simple2_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.leetcode.codes.simple2.Simple2_2" />
       <module name="LeetCodeSimple" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -270,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Simple2_2" />
+        <item itemvalue="Application.RevertListNote" />
+        <item itemvalue="Application.Inter5" />
         <item itemvalue="Application.Inter53_2" />
         <item itemvalue="Application.Simple1051" />
-        <item itemvalue="Application.Simple26" />
-        <item itemvalue="Application.Inter10_1" />
-        <item itemvalue="Application.Simple88" />
       </list>
     </recent_temporary>
   </component>
@@ -305,24 +308,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22567783" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1423445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22205773" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34566987" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19911177" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3049593" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4322724" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2938564" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32938564" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32924962" />
       <window_info anchor="bottom" id="Log Analyzer" order="11" />
       <window_info anchor="bottom" id="SOQL Query" order="12" />
       <window_info anchor="bottom" id="Anonymous Apex" order="13" />
@@ -377,17 +379,11 @@
       <configuration name="Application">
         <watch expression="reNode" />
         <watch expression="arr" />
+        <watch expression="array" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple7/Simple7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/study/node/TwoNodeMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -415,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/P.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -444,13 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
           <caret line="4378" column="32" selection-start-line="4378" selection-start-column="32" selection-end-line="4378" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -493,13 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -558,13 +533,6 @@
     </entry>
     <entry file="file:///var/folders/15/5283rhtn20l4051c3jp3yv980000gn/T/leetcode/editor/cn/[面试题10- I]斐波那契数列.java" />
     <entry file="file:///var/folders/15/5283rhtn20l4051c3jp3yv980000gn/T/leetcode/editor/cn/[面试题10- I]斐波那契数列.md" />
-    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/common/ListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple26/Simple26.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -575,27 +543,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple1051/Simple1051.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="22" selection-start-line="40" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter10_1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="44" />
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple1051/Simple1051.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter53_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-end-line="41" />
+        <state relative-caret-position="312">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter53_2.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        <state relative-caret-position="360">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="1085" column="19" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="2222" column="43" selection-start-line="2222" selection-start-column="43" selection-end-line="2222" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/interview/Inter5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple7/Simple7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/common/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/other/OtherMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="5" selection-start-line="10" selection-start-column="3" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/P.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/other/RevertListNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple2/Simple2_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="101" column="41" lean-forward="true" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple2/Simple2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="47" column="24" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/leetcode/codes/simple3/Simple3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
         </state>
       </provider>
     </entry>
