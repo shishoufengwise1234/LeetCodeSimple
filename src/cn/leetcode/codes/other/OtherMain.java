@@ -1,6 +1,7 @@
 package cn.leetcode.codes.other;
 
 import cn.leetcode.codes.PKt;
+import cn.leetcode.codes.common.ListNode;
 import sun.awt.datatransfer.DataTransferer;
 
 import java.util.Arrays;
@@ -11,15 +12,47 @@ public class OtherMain {
     public static void main(String[] args){
 
 
-        OtherMain main = new OtherMain();
+//        OtherMain main = new OtherMain();
+//
+//        int[] ins = {-1,0,5,2,8,0,0,0,5,-1,98,0,0,56};
+//        int[] reIns = main.sufferList(ins);
+//
+//        PKt.out(Arrays.toString(reIns));
 
-        int[] ins = {-1,0,5,2,8,0,0,0,5,-1,98,0,0,56};
-        int[] reIns = main.sufferList(ins);
+        ListNode head = new ListNode(1);
+        ListNode h2 = new ListNode(2);
+        ListNode h3 = new ListNode(3);
+        ListNode h4 = new ListNode(4);
+        ListNode h5 = new ListNode(5);
 
-        PKt.out(Arrays.toString(reIns));
+        h5.next = null;
+        h4.next = h5;
+        h3.next = h4;
+        h2.next = h3;
+        head.next = h2;
 
+        PKt.outListNode(head);
 
+        PKt.out("-----------------");
+
+        ListNode re = new OtherMain().resetListNode(head);
+        PKt.outListNode(re);
     }
+
+
+    public ListNode resetListNode(ListNode head){
+        ListNode pre = null;
+        ListNode next = null;
+
+        while (head != null){
+            next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
+
 
 
 
