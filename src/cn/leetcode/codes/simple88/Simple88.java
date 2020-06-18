@@ -14,7 +14,22 @@ public class Simple88 {
         int[] nums1 = {1,2,3,0,0,0};
         int[] nums2 = {2,5,6};
 
-        simple88.merge(nums1,3,nums2,3);
+//        simple88.merge(nums1,3,nums2,3);
+
+        /**
+         *
+         * args1 需要复制的源数组
+         * args2 需要复制的源数组、要复制的起始位置
+         * args3 需要复制到的数组中
+         * args4 需要复制到数组中、从哪个位置开始
+         * args5 需要复制的源数组需要复制的长度
+         *
+         */
+        System.arraycopy(nums2,0,nums1,3,nums2.length);
+        Arrays.sort(nums1);
+
+        PKt.out(Arrays.toString(nums1));
+
     }
 
 
