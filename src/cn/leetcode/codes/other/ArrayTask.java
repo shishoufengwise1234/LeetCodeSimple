@@ -14,8 +14,6 @@ public class ArrayTask<E> {
             Object[] objects = new Object[objList.length * 2];
             System.arraycopy(objList, 0, objects, 0, objList.length);
         }else {
-            objList[]
-
 //            eList[mSize - 1] = e;
         }
         mSize++;
