@@ -11,6 +11,8 @@ public class OtherMain {
 
     public static void main(String[] args){
 
+        PKt.out(""+(2 << 1));  //左移进行乘 2
+        PKt.out(""+(2 >> 1));  //右移进行除 2
 
 //        OtherMain main = new OtherMain();
 //
@@ -18,6 +20,9 @@ public class OtherMain {
 //        int[] reIns = main.sufferList(ins);
 //
 //        PKt.out(Arrays.toString(reIns));
+
+        System.out.println("结果："+1/0);
+        System.out.println("结果："+1.0/0);
 
         ListNode head = new ListNode(1);
         ListNode h2 = new ListNode(2);
