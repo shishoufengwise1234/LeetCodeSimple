@@ -5,6 +5,7 @@ import cn.leetcode.codes.common.ListNode;
 import sun.awt.datatransfer.DataTransferer;
 
 import java.util.Arrays;
+import java.util.Map;
 
 public class OtherMain {
 
@@ -42,7 +43,25 @@ public class OtherMain {
 
         ListNode re = new OtherMain().resetListNode(head);
         PKt.outListNode(re);
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     public ListNode resetListNode(ListNode head){
