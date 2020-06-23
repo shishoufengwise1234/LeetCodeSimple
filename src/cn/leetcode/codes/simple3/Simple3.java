@@ -2,6 +2,9 @@ package cn.leetcode.codes.simple3;
 
 import cn.leetcode.codes.PKt;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Simple3 {
 
      /**
@@ -60,15 +63,22 @@ public class Simple3 {
      */
 
     public int lengthOfLongestSubstring(String s) {
-        int len = s.length();
-        int q = 1;
-        int p = 0;
-        int count = 0;
-        while (p != len){
-
-
+        if (s == null || s.length() <= 0){
+            return 0;
         }
-        return count;
+        Map<Character,Integer> hashMap = new HashMap<>();
+        char[] chars = s.toCharArray();
+        int max = 0;
+        int left = 0;
+        for (int i = 0; i < chars.length; i++) {
+            char c = chars[i];
+            if (hashMap.containsKey(c)){
+                left = Math.max(left,hashMap.get(c) + 1);
+            }
+            hashMap.put(c,i);
+            max = Math.max(max,i - left+1);
+        }
+        return max;
     }
 
 
