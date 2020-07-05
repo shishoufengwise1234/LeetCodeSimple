@@ -1,10 +1,8 @@
-package cn.leetcode.codes.interview;
+package cn.leetcode.codes.offer;
 
-import cn.leetcode.codes.ArrKt;
 import cn.leetcode.codes.PKt;
 import cn.leetcode.codes.common.ListNode;
 
-import javax.management.ListenerNotFoundException;
 import java.util.Arrays;
 
 public class Inter6 {

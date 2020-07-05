@@ -1,10 +1,7 @@
-package cn.leetcode.codes.interview;
+package cn.leetcode.codes.offer;
 
 import cn.leetcode.codes.ArrKt;
 import cn.leetcode.codes.PKt;
-
-import java.util.Arrays;
-import java.util.Objects;
 
 public class Inter4 {
 

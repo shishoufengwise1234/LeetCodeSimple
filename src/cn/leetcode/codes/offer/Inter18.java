@@ -1,9 +1,7 @@
-package cn.leetcode.codes.interview;
+package cn.leetcode.codes.offer;
 
 import cn.leetcode.codes.PKt;
 import cn.leetcode.codes.common.ListNode;
-
-import java.util.List;
 
 public class Inter18 {
 

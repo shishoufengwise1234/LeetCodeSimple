@@ -1,4 +1,4 @@
-package cn.leetcode.codes.interview;
+package cn.leetcode.codes.offer;
 
 import cn.leetcode.codes.PKt;
 
