@@ -2,6 +2,8 @@ package cn.leetcode.codes.simple53;
 
 import cn.leetcode.codes.PKt;
 
+import java.util.HashMap;
+
 public class Simple53 {
 
     public static void main(String[] args) {
@@ -26,6 +28,17 @@ public class Simple53 {
      */
 
     public int maxSubArray(int[] nums) {
-        return 0;
+        if(nums == null || nums.length <= 0){
+            return 0;
+        }
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int max = 0;
+        for (int i = 0; i < nums.length; i++) {
+            int val = nums[i];
+            if (map.containsKey(val)){
+                max = Math.max(max,map.get(val) + 1);
+            }
+        }
+        return max;
     }
 }
