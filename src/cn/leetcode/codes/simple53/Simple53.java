@@ -1,6 +1,7 @@
 package cn.leetcode.codes.simple53;
 
 import cn.leetcode.codes.PKt;
+import sun.print.SunMinMaxPage;
 
 import java.util.HashMap;
 
@@ -31,14 +32,21 @@ public class Simple53 {
         if(nums == null || nums.length <= 0){
             return 0;
         }
-        HashMap<Integer,Integer> map = new HashMap<>();
-        int max = 0;
-        for (int i = 0; i < nums.length; i++) {
-            int val = nums[i];
-            if (map.containsKey(val)){
-                max = Math.max(max,map.get(val) + 1);
+        //缓存最大值
+        int ans = nums[0];
+        //上一次求和数
+        int sum = 0;
+        for (int num : nums){
+            //上一次sum 大于0 对本次求和有增值 则加上当前数据
+            if (sum > 0){
+                sum += num;
+            }else{
+                //上一次 sum<=0 对当前和没有增加 则从当前num 重新开始
+                sum = num;
             }
+            // 每次都求出最大数值
+            ans = Math.max(ans,sum);
         }
-        return max;
+        return ans;
     }
 }
