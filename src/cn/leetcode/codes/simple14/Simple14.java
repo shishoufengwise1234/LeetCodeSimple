@@ -7,6 +7,8 @@ public class Simple14 {
 
     public static void main(String[] args) {
         String[] strings = {"flower","flow","flight"};
+//        String[] strings = {"dog","racecar","car"};
+//        String[] strings = {"aca","cba"};
         String re = new Simple14().longestCommonPrefix(strings);
 
         PKt.out(re);
@@ -38,11 +40,23 @@ public class Simple14 {
         if (strs == null || strs.length <= 0){
             return "";
         }
-        int n = strs.length;
-
-        for (int i = 0; i < n; i++) {
+        //将第一个字符串为 公共前缀字符串
+        String con = strs[0];
+        //遍历字符串数组 依次和后面的字符串进行对比
+        for (String str : strs) {
+            //如果后面的字符串 不相同则 直接跳转出来
+            int j = 0;
+            for (; j < con.length() && j < str.length(); j++) {
+                if (con.charAt(j) != str.charAt(j)) {
+                    break;
+                }
+            }
+            con = con.substring(0, j);
+            if (con.equals("")) {
+                return "";
+            }
         }
-        return "";
+        return con;
     }
 
 }
