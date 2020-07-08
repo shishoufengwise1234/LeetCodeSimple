@@ -36,7 +36,8 @@ public class Simple35 {
     public static void main(String[] args) {
 //        int[] ints = new int[]{1,3,5,6};
         int[] ints = new int[]{1,3,5,6,9,78};
-        int index = new Simple35().searchInsert(ints,10);
+//        int index = new Simple35().searchInsert(ints,10);
+        int index = new Simple35_3().searchInsert(ints,10);
 
         PKt.out("index = "+index);
     }
