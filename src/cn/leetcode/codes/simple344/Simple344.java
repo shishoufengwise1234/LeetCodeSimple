@@ -7,13 +7,37 @@ import java.util.Arrays;
 
 public class Simple344 {
 
+
+    /**
+     * 刷题情况
+     * <p>
+     * 题目地址：https://leetcode-cn.com/problems/reverse-string/
+     * <p>
+     * 1 刷是否通过：通过
+     * <p>
+     * <p>
+     * 2 刷是否完成：通过
+     * <p>
+     * <p>
+     * 3 刷是否完成：
+     * <p>
+     * <p>
+     * 4 刷是否完成：
+     * <p>
+     * <p>
+     * 5 刷是否完成：
+     *
+     * 最优解析：https://leetcode-cn.com/problems/reverse-string/solution/fan-zhuan-zi-fu-chuan-by-leetcode/
+     */
+
     public static void main(String[] args) {
 //        char[] chars = new char[]{'h', 'e', 'l', 'l', 'o'};
         char[] chars = new char[]{'H','a','n','n','a','h'};
         PKt.out(Arrays.toString(chars));
         PKt.out("-------------");
 
-        new Simple344().reverseString(chars);
+//        new Simple344().reverseString(chars);
+        new Simple344_2().reverseString(chars);
 
         PKt.out(Arrays.toString(chars));
     }
