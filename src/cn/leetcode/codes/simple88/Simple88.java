@@ -15,7 +15,7 @@ public class Simple88 {
         int[] nums2 = {2,5,6};
 
 //        simple88.merge(nums1,3,nums2,3);
-
+        new Simple88_2().merge(nums1,3,nums2,3);
         /**
          *
          * args1 需要复制的源数组
@@ -25,9 +25,9 @@ public class Simple88 {
          * args5 需要复制的源数组需要复制的长度
          *
          */
-        System.arraycopy(nums2,0,nums1,3,nums2.length);
-        Arrays.sort(nums1);
-
+//        System.arraycopy(nums2,0,nums1,3,nums2.length);
+//        Arrays.sort(nums1);
+//
         PKt.out(Arrays.toString(nums1));
 
     }
