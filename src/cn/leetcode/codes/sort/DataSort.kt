@@ -16,4 +16,11 @@ interface DataSort {
      * 选择排序
      */
     fun selectSort(nums: IntArray)
+
+    /**
+     * 归并排序
+     */
+    fun margeSort(nums : IntArray) : IntArray
+
+
 }
