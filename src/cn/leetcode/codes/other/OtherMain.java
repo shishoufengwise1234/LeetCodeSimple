@@ -5,6 +5,7 @@ import cn.leetcode.codes.common.ListNode;
 import sun.awt.datatransfer.DataTransferer;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 public class OtherMain {
@@ -22,30 +23,69 @@ public class OtherMain {
 //
 //        PKt.out(Arrays.toString(reIns));
 
-        System.out.println("结果："+1/0);
-        System.out.println("结果："+1.0/0);
+//        System.out.println("结果："+1/0);
+//        System.out.println("结果："+1.0/0);
+//
+//        ListNode head = new ListNode(1);
+//        ListNode h2 = new ListNode(2);
+//        ListNode h3 = new ListNode(3);
+//        ListNode h4 = new ListNode(4);
+//        ListNode h5 = new ListNode(5);
+//
+//        h5.next = null;
+//        h4.next = h5;
+//        h3.next = h4;
+//        h2.next = h3;
+//        head.next = h2;
+//
+//        PKt.outListNode(head);
+//
+//        PKt.out("-----------------");
+//
+//        ListNode re = new OtherMain().resetListNode(head);
+//        PKt.outListNode(re);
 
-        ListNode head = new ListNode(1);
-        ListNode h2 = new ListNode(2);
-        ListNode h3 = new ListNode(3);
-        ListNode h4 = new ListNode(4);
-        ListNode h5 = new ListNode(5);
 
-        h5.next = null;
-        h4.next = h5;
-        h3.next = h4;
-        h2.next = h3;
-        head.next = h2;
+        HashMap<Integer,String> hashMap = new HashMap<>();
 
-        PKt.outListNode(head);
+        hashMap.put(123,"123");
 
-        PKt.out("-----------------");
-
-        ListNode re = new OtherMain().resetListNode(head);
-        PKt.outListNode(re);
+        PKt.out(hashMap.get(123));
 
 
+        int[] a = {1,2,3};
+        int[] b = {9,39,89,100,400};
+        int[] ans = merge(a,b);
+
+        PKt.out(Arrays.toString(ans));
     }
+
+    public static int[] merge(int[] a, int[] b){
+        // a 、b 均为升序排列的数组，实现此方法，
+        // 返回 a 和 b 合并后的升序排列数组。
+
+        int[] ans = new int[a.length + b.length];
+        int p = 0;
+        int q = 0;
+        int s = 0;
+        while(p < a.length && q < b.length){
+            if(a[p] < b[q]){
+                ans[s++] = a[p];
+                p++;
+            }else{
+                ans[s++] = b[q];
+                q++;
+            }
+        }
+        for(int a1 = p;a1 < a.length ; a1++){
+            ans[s++] = a[a1];
+        }
+        for(int b1 = q;b1 < b.length ; b1++){
+            ans[s++] = b[b1];
+        }
+        return ans;
+    }
+
 
 
 
