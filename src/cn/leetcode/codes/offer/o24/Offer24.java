@@ -8,7 +8,7 @@ public class Offer24 {
 
     public static void main(String[] args) {
 
-        ListNode listNode = CommonDataKt.getListNode(1,2,3,4,5);
+        ListNode listNode = CommonDataKt.createListNode(1,2,3,4,5);
         PKt.outListNode(listNode);
 
         PKt.out("开始翻转链表...");

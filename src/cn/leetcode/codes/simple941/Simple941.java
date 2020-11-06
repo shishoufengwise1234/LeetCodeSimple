@@ -10,6 +10,7 @@ public class Simple941 {
 //        int[] nums = {3,5,5};
         int[] nums = {0,3,2,1};
         PKt.out(new Simple941().validMountainArray(nums));
+        PKt.out(new Simple941_2().validMountainArray(nums));
 
     }
 
