@@ -2,17 +2,15 @@ package cn.leetcode.codes
 
 import cn.leetcode.codes.common.ListNode
 
-/**
- * 获取指定数量的 链表数据
- */
-fun getListNode(vararg ints : Int) : ListNode?{
-    if (ints.isEmpty())
-        return null
-    var pro = ListNode(ints[0])
-    for (e in ints){
-        out(e)
-        val temp = ListNode(e)
-
+//根据数组生成链表
+fun createListNode(vararg ints: Int): ListNode? {
+    //头指针
+    val pre = ListNode(0)
+    var curr = pre
+    for (i in ints) {
+        val temp = ListNode(i)
+        curr.next = temp
+        curr = curr.next
     }
-    return pro.next
+    return pre.next
 }
