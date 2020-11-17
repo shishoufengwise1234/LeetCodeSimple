@@ -1,5 +1,6 @@
 package cn.leetcode.codes.simple21;
 
+import cn.leetcode.codes.CommonDataKt;
 import cn.leetcode.codes.PKt;
 import cn.leetcode.codes.common.ListNode;
 
@@ -7,33 +8,48 @@ import java.util.List;
 
 public class Simple21 {
 
+    /**
+     * 刷题情况
+     *
+     * 题目地址：https://leetcode-cn.com/problems/merge-two-sorted-lists/
+     *
+     * 1 刷是否通过：no
+     *
+     *
+     * 2 刷是否完成：no
+     *
+     *
+     * 3 刷是否完成：
+     *
+     *
+     * 4 刷是否完成：
+     *
+     *
+     * 5 刷是否完成：
+     *
+     * 最优解析：https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/hua-jie-suan-fa-21-he-bing-liang-ge-you-xu-lian-bi/
+     *
+     */
+
 
     public static void main(String[] args) {
 
         PKt.out("main start ");
 
-        ListNode li1 = new ListNode(1);
-        ListNode li2 = new ListNode(2);
-        ListNode li4 = new ListNode(4);
-
-        ListNode ni1 = new ListNode(1);
-        ListNode ni3 = new ListNode(3);
-        ListNode ni4 = new ListNode(4);
-
-
-        li2.next = li4;
-        li1.next = li2;
-
-        ni3.next = ni4;
-        ni1.next = ni3;
+        ListNode li1 = CommonDataKt.createListNode(1,2,4,9,10);
+        ListNode ni1 = CommonDataKt.createListNode(1,3,4);
 
         PKt.outListNode(li1);
         PKt.outListNode(ni1);
 
 //        ListNode newNode = new Simple21().mergeTwoLists(li1,ni1);
-        ListNode newNode = new Simple21().mergeTwoLists2(li1,ni1);
+//        ListNode newNode = new Simple21().mergeTwoLists2(li1,ni1);
+//        ListNode newNode = new Simple21_2().mergeTwoLists(li1,ni1);
+        ListNode newNode2 = new Simple21_2().mergeTwoLists2(li1,ni1);
 
-        PKt.outListNode(newNode);
+
+//        PKt.outListNode(newNode);
+        PKt.outListNode(newNode2);
 
     }
 
