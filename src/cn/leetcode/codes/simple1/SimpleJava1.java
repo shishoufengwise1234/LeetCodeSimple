@@ -60,7 +60,8 @@ public class SimpleJava1 {
         //两遍hash
         long start2 = System.currentTimeMillis();
 
-        int[] twoRe = twoSum(intArr,28);
+//        int[] twoRe = twoSum(intArr,28);
+        int[] twoRe = new Simple_1_2().twoSum(intArr,28);
 
         long time2 = System.currentTimeMillis() - start2;
 

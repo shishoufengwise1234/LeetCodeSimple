@@ -45,7 +45,10 @@ public class Simple21 {
 //        ListNode newNode = new Simple21().mergeTwoLists(li1,ni1);
 //        ListNode newNode = new Simple21().mergeTwoLists2(li1,ni1);
 //        ListNode newNode = new Simple21_2().mergeTwoLists(li1,ni1);
-        ListNode newNode2 = new Simple21_2().mergeTwoLists2(li1,ni1);
+//        ListNode newNode2 = new Simple21_2().mergeTwoLists2(li1,ni1);
+//        ListNode newNode2 = new Simple21_3().mergeTwoLists(li1,ni1);
+        ListNode newNode2 = new Simple21_3().mergeTwoLists2(li1,ni1);
+
 
 
 //        PKt.outListNode(newNode);

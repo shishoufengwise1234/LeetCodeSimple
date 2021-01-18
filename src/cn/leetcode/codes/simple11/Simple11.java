@@ -29,10 +29,13 @@ public class Simple11 {
 
     public static void main(String[] args) {
 
-        int[] height = {1,8,6,2,5,4,8,3,7};
+//        int[] height = {1,8,6,2,5,4,8,3,7};
+        int[] height = {1,1};
         int maxArea = new Simple11().maxArea(height);
+        int maxArea2 = new Simple11_2().maxArea(height);
 
         PKt.out(maxArea);
+        PKt.out(maxArea2);
     }
 
     /*
