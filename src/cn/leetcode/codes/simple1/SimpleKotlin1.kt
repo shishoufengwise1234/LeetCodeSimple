@@ -41,11 +41,23 @@ fun main(array: Array<String>) {
     val intArr = intArrayOf(2,3,9,7,23,78)
 //    val intArr = intArrayOf(3, 3)
 
-    val re = printIndex(intArr, 26)
+    val re1 = printIndex(intArr, 26)
+    val re2 = Simple_1_2().twoSum(intArr,26)
 
-    println(" re = ${Arrays.toString(re)}")
+    println(" re1 = ${Arrays.toString(re1)}")
+    println(" re2 = ${Arrays.toString(re2)}")
 
 }
+
+
+
+
+
+
+
+
+
+
 
 // kotlin 实现版本
 private fun printIndex(intArr: IntArray, target: Int): IntArray {

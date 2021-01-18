@@ -13,9 +13,11 @@ public class Simple15 {
 
         int[] nums = {-1, 0, 1, 2, -1, -4};
 
-        List<List<Integer>> list = new Simple15().threeSum(nums);
+//        List<List<Integer>> list1 = new Simple15().threeSum(nums);
+        List<List<Integer>> list2 = new Simple15_2().threeSum(nums);
 
-        PKt.out(list);
+//        PKt.out(list1);
+        PKt.out(list2);
 
 
     }
