@@ -11,11 +11,15 @@ public class Simple26 {
 
 //        int[] arr = new int[]{1,1,2};
         int[] arr = new int[]{0,0,1,1,1,2,2,3,3,4};
+        int[] arr2 = new int[]{0,0,1,1,1,2,2,3,3,4};
 
         int count = new Simple26().removeDuplicates(arr);
+        int count2 = Simple26_2Kt.removeDuplicates(arr2);
 
         PKt.out("count = "+count);
         PKt.out("arr = "+ Arrays.toString(arr));
+        PKt.out("count2 = "+count2);
+        PKt.out("arr2 = "+ Arrays.toString(arr2));
 
     }
 /*
