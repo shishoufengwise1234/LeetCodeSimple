@@ -1,6 +1,7 @@
 package cn.leetcode.codes.simple20;
 
 import cn.leetcode.codes.PKt;
+import cn.leetcode.codes.simple206.Simple206_3;
 
 import javax.print.DocFlavor;
 import java.util.HashMap;
@@ -10,11 +11,16 @@ import java.util.Stack;
 public class Simple20 {
 
     public static void main(String[] args) {
-        String s = "[]()";
+//        String s = "[]()";
+        String s = "([)]";
 
         boolean re = new Simple20().isValid(s);
+//        boolean re2 = Simple20_2Kt.isValid(s);
+        boolean re3 = new Simple_20_3().isValid(s);
 
         PKt.out("re = "+re);
+//        PKt.out("re2 = "+re2);
+        PKt.out("re3 = "+re3);
     }
 
     /*
