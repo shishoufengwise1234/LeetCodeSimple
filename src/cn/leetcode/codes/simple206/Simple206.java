@@ -20,7 +20,7 @@ public class Simple206 {
      * 3 刷是否完成：yes
      * <p>
      * <p>
-     * 4 刷是否完成：
+     * 4 刷是否完成：no
      * <p>
      * <p>
      * 5 刷是否完成：
@@ -47,9 +47,13 @@ public class Simple206 {
 
 //        ListNode re = new Simple206().reverseList(head);
 //        ListNode re = new Simple206_2().reverseList(head);
-        ListNode re = new Simple206_3().reverseList(head);
+//        ListNode re = new Simple206_3().reverseList(head);
+//        ListNode re4 = new Simple206_4().reverseList(head);
+        ListNode re5 = new Simple206_5().reverseList(head);
 
-        PKt.outListNode(re);
+//        PKt.outListNode(re);
+//        PKt.outListNode(re4);
+        PKt.outListNode(re5);
 
     }
 

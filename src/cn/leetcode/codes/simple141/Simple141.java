@@ -10,9 +10,11 @@ public class Simple141 {
     public static void main(String[] args) {
 
         ListNode listNode = CommonDataKt.createListNode(1,2,3,2,5);
+//        ListNode listNode = CommonDataKt.createListNode(1,2);
         PKt.outListNode(listNode);
 
         PKt.out(new Simple141().hasCycle(listNode));
+        PKt.out(new Simple141_2().hasCycle(listNode));
 
     }
 
