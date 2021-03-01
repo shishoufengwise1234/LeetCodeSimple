@@ -6,11 +6,13 @@ import java.util.*
 fun main() {
 
 //    val nums = intArrayOf(1, 0, -1, 0, -2, 2)
-//    val nums = intArrayOf(-2,-1,-1,1,1,2,2)
-    val nums = intArrayOf(1,0,-1,0,-2,2)
-    val s = fourSum(nums, 0)
+    val nums = intArrayOf(-2,-1,-1,1,1,2,2)
+//    val nums = intArrayOf(1,0,-1,0,-2,2)
+//    val s = fourSum(nums, 0)  // [[-2, -1, 1, 2], [-1, -1, 1, 1]]
+    val s2 = Simple18_2().fourSum(nums,0) // [[-2, -1, 1, 2], [-2, -1, 1, 2], [-2, -1, 1, 2], [-2, -1, 1, 2], [-1, -1, 1, 1]]
 
-    out("s = $s")
+//    out("s = $s")
+    out("s2 = $s2")
 }
 
 /*

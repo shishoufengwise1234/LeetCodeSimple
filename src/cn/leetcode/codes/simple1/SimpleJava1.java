@@ -1,5 +1,7 @@
 package cn.leetcode.codes.simple1;
 
+import cn.leetcode.codes.PKt;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -66,6 +68,11 @@ public class SimpleJava1 {
         long time2 = System.currentTimeMillis() - start2;
 
         System.out.println(" twoRe = " + Arrays.toString(twoRe) + " 两遍hash耗时 ："+time2);
+
+        // 三刷结果
+        int[] re1_3 = Simple1_3Kt.twoSum(intArr,28);
+        PKt.out(Arrays.toString(re1_3));
+
     }
 
 
