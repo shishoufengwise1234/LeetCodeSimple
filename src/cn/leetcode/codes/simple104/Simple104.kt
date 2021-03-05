@@ -13,9 +13,13 @@ fun main() {
 
     val re = maxDepth(node)
     val re2 = maxDepth2(node)
+    val re3 = Simple104_2().maxDepth(node)
+    val re4 = Simple104_2().maxDepth2(node)
 
     out("re = $re")
     out("re2 = $re2")
+    out("re3 = $re3")
+    out("re4 = $re4")
 
 }
 
