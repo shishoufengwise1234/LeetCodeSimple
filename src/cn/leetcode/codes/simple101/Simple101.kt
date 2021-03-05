@@ -8,16 +8,24 @@ import java.util.*
 
 fun main() {
 
-//    val node = createTreeNode(intArrayOf(1,2,2,3,4,4,3))
+//    val node = createTreeNode(arrayOf(1,2,2,3,4,4,3))
     val node = createTreeNode(arrayOf(9, -42, -42, null, 76, 76, null, null, 13, null, 13))
 
     outTreeNote(node)
 
     val re = isSymmetric(node)
     val re2 = isSymmetric2(node)
+    val re3 = Simple101_2().isSymmetric(node)
+    val re4 = Simple101_2().isSymmetric2(node)
+    val re3_1 = Simple101_3().isSymmetric(node)
+    val re3_2 = Simple101_3().isSymmetric2(node)
 
     out("re = $re")
     out("re2 = $re2")
+    out("re3 = $re3")
+    out("re4 = $re4")
+    out("re3_1 = $re3_1")
+    out("re3_2 = $re3_2")
 
 
 }

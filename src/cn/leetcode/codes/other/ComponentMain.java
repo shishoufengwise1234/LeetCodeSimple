@@ -16,17 +16,20 @@ public class ComponentMain {
         String[] names = {"甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"};
         String[] names2 = {"子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"};
 
-        List<String> list = printComponent(names, names2,100);
+        List<String> list = printComponent(names, names2,60);
         PKt.out(list.size());
         PKt.out(list);
     }
 
+    //时间复杂度 O(n)
+    //空间复杂度 O(n)
     private static List<String> printComponent(String[] names, String[] names2, int target) {
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>(target);
         int count = 0;
         int i = 0;
         int j = 0;
         while (count < target) {
+            //重置边界
             if (i == names.length) {
                 i = 0;
             }

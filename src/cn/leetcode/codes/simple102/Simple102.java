@@ -24,8 +24,12 @@ public class Simple102 {
         root.right = r2;
 
         List<List<Integer>> list = new Simple102().levelOrder(root);
+        List<List<Integer>> list2 = new Simple102_2().levelOrder(root);
+        List<List<Integer>> list3 = new Simple102_2().levelOrder2(root);
 
         PKt.out(list);
+        PKt.out(list2);
+        PKt.out(list3);
     }
 
     /*
