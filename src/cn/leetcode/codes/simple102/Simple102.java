@@ -26,10 +26,15 @@ public class Simple102 {
         List<List<Integer>> list = new Simple102().levelOrder(root);
         List<List<Integer>> list2 = new Simple102_2().levelOrder(root);
         List<List<Integer>> list3 = new Simple102_2().levelOrder2(root);
+        List<List<Integer>> list102_3 = new Simple102_3().levelOrder(root);
+        List<List<Integer>> list102_4 = new Simple102_3().levelOrder2(root);
+
 
         PKt.out(list);
         PKt.out(list2);
         PKt.out(list3);
+        PKt.out("list102_3 = "+list102_3);
+        PKt.out("list102_4 = "+list102_4);
     }
 
     /*

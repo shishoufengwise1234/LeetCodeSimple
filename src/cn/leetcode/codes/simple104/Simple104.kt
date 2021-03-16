@@ -15,11 +15,15 @@ fun main() {
     val re2 = maxDepth2(node)
     val re3 = Simple104_2().maxDepth(node)
     val re4 = Simple104_2().maxDepth2(node)
+    val re104_3_1 = Simple104_3().maxDepth(node)
+    val re104_3_2 = Simple104_3().maxDepth2(node)
 
     out("re = $re")
     out("re2 = $re2")
     out("re3 = $re3")
     out("re4 = $re4")
+    out("re104_3_1 = $re104_3_1")
+    out("re104_3_2 = $re104_3_2")
 
 }
 

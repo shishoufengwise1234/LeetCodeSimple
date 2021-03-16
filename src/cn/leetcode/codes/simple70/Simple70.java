@@ -15,7 +15,7 @@ public class Simple70 {
      * 菲波那切数列
      * <p>
      * <p>
-     * 2 刷是否完成：
+     * 2 刷是否完成：完成
      * <p>
      * <p>
      * 3 刷是否完成：
@@ -32,9 +32,15 @@ public class Simple70 {
 
     public static void main(String[] args) {
         Simple70 simple70 = new Simple70();
-        for (int i = 1; i < 20; i++) {
-            PKt.out(" i = "+simple70.climbStairs(i));
-        }
+        Simple70_2 simple70_2 =  new  Simple70_2();
+
+        PKt.out(simple70.climbStairs(45));
+        PKt.out(simple70_2.climbStairs(45));
+
+//        for (int i = 1; i < 20; i++) {
+//            PKt.out(" i = "+simple70.climbStairs(i));
+//            PKt.out("simple70_2 :  i = "+simple70_2.climbStairs(i));
+//        }
     }
 
 
