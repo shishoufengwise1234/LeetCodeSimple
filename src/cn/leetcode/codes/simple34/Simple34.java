@@ -9,10 +9,13 @@ public class Simple34 {
 
 
     public static void main(String[] args) {
-        int[] nums = {5,7,7,8,8,10};
-        int[] re = new Simple34().searchRange(nums,8);
+//        int[] nums = {5,7,7,8,8,10};
+        int[] nums = {1};
+//        int[] re = new Simple34().searchRange(nums,8);
+        int[] re2 = new Simple34_2().searchRange(nums, 1);
 
-        PKt.out("re = "+ Arrays.toString(re));
+//        PKt.out("re = "+ Arrays.toString(re));
+        PKt.out("re2 = "+ Arrays.toString(re2));
     }
 
     /*

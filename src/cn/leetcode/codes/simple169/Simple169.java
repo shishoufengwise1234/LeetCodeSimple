@@ -27,7 +27,7 @@ public class Simple169 {
      * <p>
      * <p>
      * 5 刷是否完成：
-     *
+     * <p>
      * 最优解析：官方
      */
 
@@ -35,10 +35,12 @@ public class Simple169 {
     public static void main(String[] args) {
 
 //        int[] nums = {3,2,3};
-        int[] nums = {2,2,1,1,1,2,2};
+        int[] nums = {2, 2, 1, 1, 1, 2, 2};
 
         int majorNum = new Simple169().majorityElement(nums);
-        PKt.out("majorNum = "+majorNum);
+        int majorNum2 = new Simple169_2().majorityElement(nums);
+        PKt.out("majorNum = " + majorNum);
+        PKt.out("majorNum2 = " + majorNum2);
 
     }
 
@@ -60,10 +62,10 @@ public class Simple169 {
 输出: 2
      */
     public int majorityElement(int[] nums) {
-        if (nums == null || nums.length == 0){
+        if (nums == null || nums.length == 0) {
             return -1;
         }
-        HashMap<Integer,Integer> countMap = new HashMap<>();
+        HashMap<Integer, Integer> countMap = new HashMap<>();
         for (int n : nums) {
             if (countMap.containsKey(n)) {
                 countMap.put(n, countMap.get(n) + 1);
@@ -72,9 +74,9 @@ public class Simple169 {
             }
         }
         int major = nums.length / 2;
-        Set<Map.Entry<Integer,Integer>> entrySet = countMap.entrySet();
-        for (Map.Entry<Integer,Integer> entry : entrySet){
-            if (entry.getValue() > major){
+        Set<Map.Entry<Integer, Integer>> entrySet = countMap.entrySet();
+        for (Map.Entry<Integer, Integer> entry : entrySet) {
+            if (entry.getValue() > major) {
                 return entry.getKey();
             }
         }

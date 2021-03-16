@@ -16,6 +16,15 @@ public class OtherMain {
         PKt.out(""+(2 << 1));  //左移进行乘 2
         PKt.out(""+(2 >> 1));  //右移进行除 2
 
+        PKt.out(10>>>1);
+
+        int l = 3;
+        int r = 10;
+//        PKt.out(~l);
+        PKt.out(l & r);
+
+
+
 //        OtherMain main = new OtherMain();
 //
 //        int[] ins = {-1,0,5,2,8,0,0,0,5,-1,98,0,0,56};
@@ -46,18 +55,18 @@ public class OtherMain {
 //        PKt.outListNode(re);
 
 
-        HashMap<Integer,String> hashMap = new HashMap<>();
-
-        hashMap.put(123,"123");
-
-        PKt.out(hashMap.get(123));
-
-
-        int[] a = {1,2,3};
-        int[] b = {9,39,89,100,400};
-        int[] ans = merge(a,b);
-
-        PKt.out(Arrays.toString(ans));
+//        HashMap<Integer,String> hashMap = new HashMap<>();
+//
+//        hashMap.put(123,"123");
+//
+//        PKt.out(hashMap.get(123));
+//
+//
+//        int[] a = {1,2,3};
+//        int[] b = {9,39,89,100,400};
+//        int[] ans = merge(a,b);
+//
+//        PKt.out(Arrays.toString(ans));
     }
 
     public static int[] merge(int[] a, int[] b){
