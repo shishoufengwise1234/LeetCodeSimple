@@ -23,114 +23,19 @@
 //
 //    private static final long serialVersionUID = 362498820763181265L;
 //
-//    /*
-//     * Implementation notes.
-//     *
-//     * This map usually acts as a binned (bucketed) hash table, but
-//     * when bins get too large, they are transformed into bins of
-//     * TreeNodes, each structured similarly to those in
-//     * java.util.TreeMap. Most methods try to use normal bins, but
-//     * relay to TreeNode methods when applicable (simply by checking
-//     * instanceof a node).  Bins of TreeNodes may be traversed and
-//     * used like any others, but additionally support faster lookup
-//     * when overpopulated. However, since the vast majority of bins in
-//     * normal use are not overpopulated, checking for existence of
-//     * tree bins may be delayed in the course of table methods.
-//     *
-//     * Tree bins (i.e., bins whose elements are all TreeNodes) are
-//     * ordered primarily by hashCode, but in the case of ties, if two
-//     * elements are of the same "class C implements Comparable<C>",
-//     * type then their compareTo method is used for ordering. (We
-//     * conservatively check generic types via reflection to validate
-//     * this -- see method comparableClassFor).  The added complexity
-//     * of tree bins is worthwhile in providing worst-case O(log n)
-//     * operations when keys either have distinct hashes or are
-//     * orderable, Thus, performance degrades gracefully under
-//     * accidental or malicious usages in which hashCode() methods
-//     * return values that are poorly distributed, as well as those in
-//     * which many keys share a hashCode, so long as they are also
-//     * Comparable. (If neither of these apply, we may waste about a
-//     * factor of two in time and space compared to taking no
-//     * precautions. But the only known cases stem from poor user
-//     * programming practices that are already so slow that this makes
-//     * little difference.)
-//     *
-//     * Because TreeNodes are about twice the size of regular nodes, we
-//     * use them only when bins contain enough nodes to warrant use
-//     * (see TREEIFY_THRESHOLD). And when they become too small (due to
-//     * removal or resizing) they are converted back to plain bins.  In
-//     * usages with well-distributed user hashCodes, tree bins are
-//     * rarely used.  Ideally, under random hashCodes, the frequency of
-//     * nodes in bins follows a Poisson distribution
-//     * (http://en.wikipedia.org/wiki/Poisson_distribution) with a
-//     * parameter of about 0.5 on average for the default resizing
-//     * threshold of 0.75, although with a large variance because of
-//     * resizing granularity. Ignoring variance, the expected
-//     * occurrences of list size k are (exp(-0.5) * pow(0.5, k) /
-//     * factorial(k)). The first values are:
-//     *
-//     * 0:    0.60653066
-//     * 1:    0.30326533
-//     * 2:    0.07581633
-//     * 3:    0.01263606
-//     * 4:    0.00157952
-//     * 5:    0.00015795
-//     * 6:    0.00001316
-//     * 7:    0.00000094
-//     * 8:    0.00000006
-//     * more: less than 1 in ten million
-//     *
-//     * The root of a tree bin is normally its first node.  However,
-//     * sometimes (currently only upon Iterator.remove), the root might
-//     * be elsewhere, but can be recovered following parent links
-//     * (method TreeNode.root()).
-//     *
-//     * All applicable internal methods accept a hash code as an
-//     * argument (as normally supplied from a public method), allowing
-//     * them to call each other without recomputing user hashCodes.
-//     * Most internal methods also accept a "tab" argument, that is
-//     * normally the current table, but may be a new or old one when
-//     * resizing or converting.
-//     *
-//     * When bin lists are treeified, split, or untreeified, we keep
-//     * them in the same relative access/traversal order (i.e., field
-//     * Node.next) to better preserve locality, and to slightly
-//     * simplify handling of splits and traversals that invoke
-//     * iterator.remove. When using comparators on insertion, to keep a
-//     * total ordering (or as close as is required here) across
-//     * rebalancings, we compare classes and identityHashCodes as
-//     * tie-breakers.
-//     *
-//     * The use and transitions among plain vs tree modes is
-//     * complicated by the existence of subclass LinkedHashMap. See
-//     * below for hook methods defined to be invoked upon insertion,
-//     * removal and access that allow LinkedHashMap internals to
-//     * otherwise remain independent of these mechanics. (This also
-//     * requires that a map instance be passed to some utility methods
-//     * that may create new nodes.)
-//     *
-//     * The concurrent-programming-like SSA-based coding style helps
-//     * avoid aliasing errors amid all of the twisty pointer operations.
-//     */
+//
 //
 //    /**
-//     * The default initial capacity - MUST be a power of two.
-//     *
 //     * 默认HashMap容量大小 16
 //     */
 //    static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
 //
 //    /**
-//     * The maximum capacity, used if a higher value is implicitly specified
-//     * by either of the constructors with arguments.
-//     * MUST be a power of two <= 1<<30.
-//     *
 //     * HashMap 最大容量 1073741824
 //     */
 //    static final int MAXIMUM_CAPACITY = 1 << 30;
 //
 //    /**
-//     * The load factor used when none specified in constructor.
 //     *
 //     * 默认负载因子
 //     *
@@ -142,36 +47,18 @@
 //    static final float DEFAULT_LOAD_FACTOR = 0.75f;
 //
 //    /**
-//     * The bin count threshold for using a tree rather than list for a
-//     * bin.  Bins are converted to trees when adding an element to a
-//     * bin with at least this many nodes. The value must be greater
-//     * than 2 and should be at least 8 to mesh with assumptions in
-//     * tree removal about conversion back to plain bins upon
-//     * shrinkage.
 //     *
 //     * 链表长度大于此值且 容量大于 64 时会将链表转换成红黑树表示
-//     *
 //     */
 //    static final int TREEIFY_THRESHOLD = 8;
 //
 //    /**
-//     * The bin count threshold for untreeifying a (split) bin during a
-//     * resize operation. Should be less than TREEIFY_THRESHOLD, and at
-//     * most 6 to mesh with shrinkage detection under removal.
-//     *
 //     * 红黑树转换成链表时阈值 如果红黑树长度小于6 会转换成 链表表示
-//     *
 //     */
 //    static final int UNTREEIFY_THRESHOLD = 6;
 //
 //    /**
-//     * The smallest table capacity for which bins may be treeified.
-//     * (Otherwise the table is resized if too many nodes in a bin.)
-//     * Should be at least 4 * TREEIFY_THRESHOLD to avoid conflicts
-//     * between resizing and treeification thresholds.
-//     *
 //     *红黑树最小容量
-//     *
 //     */
 //    static final int MIN_TREEIFY_CAPACITY = 64;
 //
@@ -248,7 +135,7 @@
 //     * never be used in index calculations because of table bounds.
 //     *
 //     * 计算 K 的 hashCode() 值
-//     *
+//     *优化了高位运算的算法，通过hashCode()的高16位异或低16位实现的：(h = k.hashCode()) ^ (h >>> 16)，主要是从速度、功效、质量来考虑的。以上方法得到的int的hash值，然后再通过h & (table.length -1)来得到该对象在数据中保存的位置。
 //     */
 //    static final int hash(Object key) {
 //        int h;
@@ -294,7 +181,7 @@
 //    }
 //
 //    /**
-//     * Returns a power of two size for the given target capacity.
+//     * 对于给定大小 返回 2的幂 大小
 //     */
 //    static final int tableSizeFor(int cap) {
 //        int n = cap - 1;
