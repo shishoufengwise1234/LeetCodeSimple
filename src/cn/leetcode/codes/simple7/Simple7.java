@@ -28,21 +28,13 @@ public class Simple7 {
             //不断地取出个位数
             x /= 10;
 
-            System.out.println("reverse : "+pop + " x = "+x);
-
             if (rev > Integer.MAX_VALUE / 10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)){
-                System.out.println("rev > Integer.MAX_VALUE / 10 ");
                 return 0;
             }
             if (rev < Integer.MIN_VALUE / 10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)){
-                System.out.println("rev < Integer.MIN_VALUE / 10");
-
                 return 0;
             }
-
             rev = rev * 10 + pop;
-
-            System.out.println(" rev = "+rev);
         }
         return rev;
     }

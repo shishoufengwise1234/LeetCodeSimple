@@ -1,5 +1,7 @@
 package cn.leetcode.codes.simple7
 
+import cn.leetcode.codes.out
+
 /*
 
 7. 整数反转
@@ -26,16 +28,27 @@ package cn.leetcode.codes.simple7
 
 fun main(){
 
+    out(reverse(123))
 
 
 }
 
 
 fun reverse(x: Int): Int {
+    var ans = 0
 
-
-
-
-
-    return 0
+    var y = x
+    while (y != 0){
+        val pop = x % 10
+        //溢出检查
+        if (ans > Int.MAX_VALUE / 10 || (ans == Int.MAX_VALUE / 10 && pop > 7)){
+            return 0
+        }
+        if (ans < Int.MIN_VALUE / 10 || (ans == Int.MIN_VALUE / 10 && pop < -8)){
+            return 0
+        }
+        ans = ans * 10 + pop
+        y /= 10
+    }
+    return ans
 }
