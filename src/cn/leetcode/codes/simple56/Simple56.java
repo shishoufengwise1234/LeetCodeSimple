@@ -1,5 +1,13 @@
 package cn.leetcode.codes.simple56;
 
+import cn.leetcode.codes.PKt;
+import kotlin.collections.ArraysKt;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 public class Simple56 {
 
     /**
@@ -27,6 +35,11 @@ public class Simple56 {
 
     public static void main(String[] args) {
 
+        int[][] intervals = {{1,3},
+                {2,6},{8,10},{15,18}};
+        int[][] re = new Simple56().merge(intervals);
+
+        PKt.out(Arrays.deepToString(re));
 
     }
 
@@ -60,7 +73,28 @@ intervals[i].length == 2
 
 
     public int[][] merge(int[][] intervals) {
+        if (intervals.length == 0){
+            return new int[0][0];
+        }
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] - o2[0];
+            }
+        });
+        List<int[]> merged = new ArrayList<>();
+        for (int i = 0; i < intervals.length; i++) {
+            int l = intervals[i][0];
+            int r = intervals[0][1];
 
-        return null;
+            int mSize = merged.size();
+
+            if (mSize == 0 || merged.get(mSize - 1)[1] < l){
+                merged.add(new int[]{l,r});
+            }else{
+                merged.get(mSize - 1)[1] = Math.max(merged.get(mSize - 1)[1],r);
+            }
+        }
+        return merged.toArray(new int[merged.size()][]);
     }
 }
