@@ -5,10 +5,12 @@ import cn.leetcode.codes.outTreeNote
 
 fun main() {
 
-    val preOrder = intArrayOf(3,9,20,15,7)
-    val inOrder = intArrayOf(9,3,15,20,7)
+    val preOrder = intArrayOf(3, 9, 20, 15, 7)
+    val inOrder = intArrayOf(9, 3, 15, 20, 7)
 
-    val treeNode = buildTree(preOrder,inOrder)
+    var treeNode:TreeNode? = null
+    treeNode = buildTree(preOrder, inOrder)
+//    treeNode = Simple105_2().buildTree(preOrder,inOrder) // [[3], [9], [20], [15], [7]]
 
     outTreeNote(treeNode)
 
@@ -67,14 +69,14 @@ fun buildTree(preorder: IntArray, inorder: IntArray): TreeNode? {
         return null
     }
     //使用map存储数据
-    preorder.forEachIndexed { p, i ->
+    inorder.forEachIndexed { p, i ->
         map.put(p, i)
     }
     return buildTreeHelper(preorder, 0, preorder.size, inorder, 0, inorder.size)
 }
 
 private fun buildTreeHelper(preorder: IntArray, preStart: Int, preEnd: Int, inorder: IntArray, inStart: Int, inEnd: Int): TreeNode? {
-    if (preStart == preEnd) {
+    if (preStart > preEnd) {
         return null
     }
     //前序遍历的根节点

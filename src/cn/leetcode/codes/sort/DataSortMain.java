@@ -15,7 +15,9 @@ public class DataSortMain {
         //第二遍
 //        dataSort = new DataSort2();
         //第三遍
-        dataSort = new DataSort3();
+//        dataSort = new DataSort3();
+        //第四遍
+        dataSort = new DataSort4();
 
         //冒泡排序
 //        dataSort.bubbleSort(nums);
