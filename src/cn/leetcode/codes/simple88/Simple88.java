@@ -15,7 +15,10 @@ public class Simple88 {
         int[] nums2 = {2,5,6};
 
 //        simple88.merge(nums1,3,nums2,3);
-        new Simple88_2().merge(nums1,3,nums2,3);
+//        new Simple88_2().merge(nums1,3,nums2,3);
+        Simple88_3 simple88_3 = new Simple88_3();
+//        simple88_3.merge(nums1, nums1.length, nums2, nums2.length );
+        simple88_3.merge2(nums1, 3, nums2, 3 );
         /**
          *
          * args1 需要复制的源数组

@@ -7,6 +7,29 @@ import java.util.List;
 
 public class Simple6 {
 
+    /**
+     * 刷题情况
+     *
+     * 题目地址：https://leetcode-cn.com/problems/zigzag-conversion/
+     *
+     * 1 刷是否通过：没有
+     *
+     *
+     * 2 刷是否完成：
+     *
+     *
+     * 3 刷是否完成：
+     *
+     *
+     * 4 刷是否完成：
+     *
+     *
+     * 5 刷是否完成：
+     *
+     * 最优解析：
+     *
+     */
+
 
     public static void main(String[] args) {
 
@@ -14,8 +37,10 @@ public class Simple6 {
         String s = "LEETCODEISHIRING";
 
         String re = new Simple6().convert(s,5);
+        String re2 = new Simple6_2().convert(s, 3);
 
         PKt.out(re);
+        PKt.out(re2);
 
     }
 

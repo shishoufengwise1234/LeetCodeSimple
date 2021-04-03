@@ -23,4 +23,10 @@ interface DataSort {
     fun margeSort(nums : IntArray) : IntArray
 
 
+    /**
+     * 快速排序
+     */
+    fun quickSort(nums: IntArray)
+
+
 }

@@ -14,7 +14,7 @@ public class Simple24 {
      * 1 刷是否通过：没有
      *
      *
-     * 2 刷是否完成：
+     * 2 刷是否完成：没有
      *
      *
      * 3 刷是否完成：
@@ -34,7 +34,12 @@ public class Simple24 {
         ListNode node = CommonDataKt.createListNode(1,2,3,4);
         PKt.outListNode(node);
 
-        ListNode re = new Simple24().swapPairs(node);
+//        ListNode re = new Simple24().swapPairs(node);
+//        PKt.outListNode(re);
+
+        Simple24_2 simple24_2 = new Simple24_2();
+//        ListNode re = simple24_2.swapPairs(node);
+        ListNode re = simple24_2.swapPairs2(node);
         PKt.outListNode(re);
 
     }

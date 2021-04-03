@@ -1,10 +1,16 @@
 package cn.leetcode.codes.simple5;
 
+import cn.leetcode.codes.PKt;
+
 public class Simple5 {
 
 
     public static void main(String[] args) {
 
+        String s = "babad";
+
+        String re = new Simple5_3().longestPalindrome(s);
+        PKt.out(" re = "+re);
 
     }
 

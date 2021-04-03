@@ -36,9 +36,11 @@ public class Simple3 {
         String s = "abcabcbb";
         int re = new Simple3().lengthOfLongestSubstring(s);
         int re3 = Simple3_3Kt.lengthOfLongestSubstring(s);
+        int re4 = new Simple3_4().lengthOfLongestSubstring(s);
 
         PKt.out(" re = "+re);
         PKt.out(" re3 = "+re3);
+        PKt.out(" re4 = "+re4);
 
     }
     /*

@@ -1,5 +1,6 @@
 package cn.leetcode.codes.simple83;
 
+import cn.leetcode.codes.CommonDataKt;
 import cn.leetcode.codes.PKt;
 import cn.leetcode.codes.common.ListNode;
 
@@ -7,18 +8,15 @@ public class Simple83 {
 
 
     public static void main(String[] args) {
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(1);
-        ListNode node3 = new ListNode(2);
 
-        node3.next = null;
-        node2.next = node3;
-        node1.next = node2;
+        ListNode node = CommonDataKt.createListNode(1,1,2);
 
-        PKt.outListNode(node1);
+//        ListNode re = new Simple83().deleteDuplicates(node);
+//        PKt.outListNode(re);
 
-        ListNode node = new Simple83().deleteDuplicates(node1);
-        PKt.outListNode(node);
+        ListNode re2 = new Simple83_2().deleteDuplicates(node);
+        PKt.outListNode(re2);
+
     }
 
     /*
