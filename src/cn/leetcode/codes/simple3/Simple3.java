@@ -7,29 +7,38 @@ import java.util.Map;
 
 public class Simple3 {
 
-     /**
-       *
-       * 刷题情况
-       *
-       * 题目地址：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
-       *
-       * 1 刷是否通过：
-       *
-       *
-       * 2 刷是否完成：
-       *
-       *
-       * 3 刷是否完成：
-       *
-       *
-       * 4 刷是否完成：
-       *
-       *
-       * 5 刷是否完成：
-       *
-       *
-       *
-       */
+    /**
+     * 刷题情况
+     *
+     * 题目地址：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
+     *
+     * 1 刷是否通过：
+     *
+     *
+     * 2 刷是否完成：
+     *
+     *
+     * 3 刷是否完成：
+     *
+     *
+     * 4 刷是否完成：
+     *
+     *
+     * 5 刷是否完成：
+     *
+     * 最优解析：
+     *
+     *
+     * 面试是否遇到过？
+     *
+     *
+     * 企业：
+     *
+     * 作业帮
+     *
+     *
+     */
+
 
     public static void main(String[] args){
 
@@ -37,10 +46,12 @@ public class Simple3 {
         int re = new Simple3().lengthOfLongestSubstring(s);
         int re3 = Simple3_3Kt.lengthOfLongestSubstring(s);
         int re4 = new Simple3_4().lengthOfLongestSubstring(s);
+        int re5 = new Simple3_5().lengthOfLongestSubstring(s);
 
         PKt.out(" re = "+re);
         PKt.out(" re3 = "+re3);
         PKt.out(" re4 = "+re4);
+        PKt.out(" re5 = "+re5);
 
     }
     /*

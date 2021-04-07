@@ -28,13 +28,21 @@ public class Simple62 {
      * 5 刷是否完成：
      *
      * 最优解析：https://leetcode-cn.com/problems/unique-paths/solution/dong-tai-gui-hua-by-powcai-2/
+     *
+     * https://leetcode-cn.com/problems/unique-paths/solution/dong-tai-gui-hua-by-powcai-2/
      */
 
     public static void main(String[] args) {
 
-        int m = 7,n = 3;
+        int m = 3,n = 2;
         int count = new Simple62().uniquePaths(m,n);
+        Simple62_2 simple62_2 = new Simple62_2();
+        int count2 = simple62_2.uniquePaths(m,n);
+        int count3 = simple62_2.uniquePaths2(m,n);
+
         PKt.out("count = "+count);
+        PKt.out("count2 = "+count2);
+        PKt.out("count3 = "+count3);
 
     }
 
