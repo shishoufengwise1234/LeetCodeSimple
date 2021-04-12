@@ -14,7 +14,7 @@ public class Simple63 {
      * 1 刷是否通过：
      *
      *
-     * 2 刷是否完成：
+     * 2 刷是否完成：yes
      *
      *
      * 3 刷是否完成：
@@ -40,12 +40,14 @@ public class Simple63 {
 
     public static void main(String[] args) {
 
-//        int[][] nums = {{0,0,0},{0,1,0},{0,0,0}};
-        int[][] nums = {{0,1},{0,0}};
+        int[][] nums = {{0,0,0},{0,1,0},{0,0,0}};
+//        int[][] nums = {{0,1},{0,0}};
 
         int re = new Simple63().uniquePathsWithObstacles(nums);
+        int re2 = new Simple63_2().uniquePathsWithObstacles(nums);
 
         PKt.out(re);
+        PKt.out(re2);
 
 
     }
