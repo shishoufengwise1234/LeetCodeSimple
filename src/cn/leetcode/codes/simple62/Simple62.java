@@ -16,10 +16,10 @@ public class Simple62 {
      * 1 刷是否通过：  没有
      * <p>
      * <p>
-     * 2 刷是否完成：
+     * 2 刷是否完成：yes
      * <p>
      * <p>
-     * 3 刷是否完成：
+     * 3 刷是否完成：yes
      * <p>
      * <p>
      * 4 刷是否完成：
@@ -28,13 +28,27 @@ public class Simple62 {
      * 5 刷是否完成：
      *
      * 最优解析：https://leetcode-cn.com/problems/unique-paths/solution/dong-tai-gui-hua-by-powcai-2/
+     *
+     * https://leetcode-cn.com/problems/unique-paths/solution/dong-tai-gui-hua-by-powcai-2/
      */
 
     public static void main(String[] args) {
 
-        int m = 7,n = 3;
+        int m = 3,n = 2;
         int count = new Simple62().uniquePaths(m,n);
+        Simple62_2 simple62_2 = new Simple62_2();
+        int count2 = simple62_2.uniquePaths(m,n);
+        int count3 = simple62_2.uniquePaths2(m,n);
+
+        Simple62_3 simple62_3 = new Simple62_3();
+        int count4 = simple62_3.uniquePaths(m,n);
+        int count5 = simple62_3.uniquePaths2(m,n);
+
         PKt.out("count = "+count);
+        PKt.out("count2 = "+count2);
+        PKt.out("count3 = "+count3);
+        PKt.out("count4 = "+count4);
+        PKt.out("count5 = "+count5);
 
     }
 
