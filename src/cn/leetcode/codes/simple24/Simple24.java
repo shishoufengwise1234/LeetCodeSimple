@@ -37,10 +37,16 @@ public class Simple24 {
 //        ListNode re = new Simple24().swapPairs(node);
 //        PKt.outListNode(re);
 
-        Simple24_2 simple24_2 = new Simple24_2();
+//        Simple24_2 simple24_2 = new Simple24_2();
 //        ListNode re = simple24_2.swapPairs(node);
-        ListNode re = simple24_2.swapPairs2(node);
-        PKt.outListNode(re);
+//        ListNode re = simple24_2.swapPairs2(node);
+//        PKt.outListNode(re);
+
+        Simple24_3 simple24_3 = new Simple24_3();
+        ListNode re3 = simple24_3.swapPairs(node);
+
+        PKt.outListNode(re3);
+
 
     }
 
