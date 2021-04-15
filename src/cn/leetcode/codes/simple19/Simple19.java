@@ -9,12 +9,14 @@ public class Simple19 {
 
     public static void main(String[] args) {
 
-//        ListNode node = CommonDataKt.createListNode(1, 2, 3, 4, 5);
-        ListNode node = CommonDataKt.createListNode(1);
+        ListNode node = CommonDataKt.createListNode(1, 2, 3, 4, 5);
+//        ListNode node = CommonDataKt.createListNode(1);
         PKt.outListNode(node);
 
-        ListNode re = new Simple19().removeNthFromEnd(node, 1);
-        PKt.outListNode(re);
+//        ListNode re = new Simple19().removeNthFromEnd(node, 1);
+        ListNode re2 = new Simple19_2().removeNthFromEnd(node, 1);
+//        PKt.outListNode(re);
+        PKt.outListNode(re2);
 
     }
 

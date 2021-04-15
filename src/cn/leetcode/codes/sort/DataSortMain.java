@@ -17,10 +17,13 @@ public class DataSortMain {
         //第三遍
 //        dataSort = new DataSort3();
         //第四遍
-        dataSort = new DataSort4();
+//        dataSort = new DataSort4();
+
+        //第五遍
+        dataSort = new DataSort5();
 
         //冒泡排序
-//        dataSort.bubbleSort(nums);
+        dataSort.bubbleSort(nums);
 
         //插入排序
 //        dataSort.insertionSort(nums);
@@ -32,7 +35,7 @@ public class DataSortMain {
 //        nums = dataSort.margeSort(nums);
 
         //快速排序
-        dataSort.quickSort(nums);
+//        dataSort.quickSort(nums);
 
         PKt.out("nums = "+ Arrays.toString(nums));
 

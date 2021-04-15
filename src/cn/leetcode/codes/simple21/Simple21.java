@@ -22,7 +22,7 @@ public class Simple21 {
      * 3 刷是否完成：
      *
      *
-     * 4 刷是否完成：
+     * 4 刷是否完成：yes
      *
      *
      * 5 刷是否完成：
@@ -36,8 +36,10 @@ public class Simple21 {
 
         PKt.out("main start ");
 
-        ListNode li1 = CommonDataKt.createListNode(1,2,4,9,10);
-        ListNode ni1 = CommonDataKt.createListNode(1,3,4);
+//        ListNode li1 = CommonDataKt.createListNode(1,2,4,9,10);
+        ListNode li1 = CommonDataKt.createListNode(-9,3);
+//        ListNode ni1 = CommonDataKt.createListNode(1,3,4);
+        ListNode ni1 = CommonDataKt.createListNode(5,7);
 
         PKt.outListNode(li1);
         PKt.outListNode(ni1);
@@ -47,12 +49,15 @@ public class Simple21 {
 //        ListNode newNode = new Simple21_2().mergeTwoLists(li1,ni1);
 //        ListNode newNode2 = new Simple21_2().mergeTwoLists2(li1,ni1);
 //        ListNode newNode2 = new Simple21_3().mergeTwoLists(li1,ni1);
-        ListNode newNode2 = new Simple21_3().mergeTwoLists2(li1,ni1);
+//        ListNode newNode2 = new Simple21_3().mergeTwoLists2(li1,ni1);
 
+        ListNode node4 = new Simple21_4().mergeTwoLists(li1, ni1);
 
 
 //        PKt.outListNode(newNode);
-        PKt.outListNode(newNode2);
+//        PKt.outListNode(newNode2);
+
+        PKt.outListNode(node4);
 
     }
 
