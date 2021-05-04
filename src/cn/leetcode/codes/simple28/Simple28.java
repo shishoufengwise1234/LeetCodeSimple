@@ -8,12 +8,19 @@ public class Simple28 {
 
     public static void main(String[] args) {
 
-//        String haystack = "hello", needle = "lle";
+        String haystack = "hello", needle = "ll";
 //        String haystack = "a", needle = "a";
-        String haystack = "aaa", needle = "aaaa";
-        int strIndex = new Simple28().strStr(haystack,needle);
+//        String haystack = "aaa", needle = "aaaa";
 
-        PKt.out(strIndex);
+//        int strIndex = new Simple28().strStr(haystack,needle);
+//        PKt.out(strIndex);
+
+
+        int re = new Simple28_2().strStr(haystack, needle);
+
+        PKt.out(re);
+
+
 
     }
 

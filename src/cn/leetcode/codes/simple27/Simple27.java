@@ -13,9 +13,17 @@ public class Simple27 {
         PKt.out("length = "+ins.length);
 
         Simple27 simple27 = new Simple27();
-        int count = simple27.removeElement(ins,2);
+//        int count = simple27.removeElement(ins,2);
+//        PKt.out("count = "+count);
 
-        PKt.out("count = "+count);
+        Simple27_2 simple27_2 = new Simple27_2();
+//        int count2 = simple27_2.removeElement(ins, 2);
+        int count2 = simple27_2.removeElement2(ins, 2);
+        PKt.out(Arrays.toString(ins));
+
+        PKt.out("count2 = "+count2);
+
+
 
     }
 

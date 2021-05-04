@@ -7,9 +7,10 @@ public class Simple151 {
 
     public static void main(String[] args) {
 
-//        String s = "the sky is blue";
-        String s = "  hello world!  ";
-        String re = new Simple151().reverseWords(s);
+        String s = "the sky is blue";
+//        String s = "  hello world!  ";
+//        String re = new Simple151().reverseWords(s);
+        String re = new Simple151_2().reverseWords(s);
 
         PKt.out(re);
     }
